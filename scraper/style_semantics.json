@@ -1,0 +1,237 @@
+{
+  "_doc": {
+    "about": "What each racer style is built around, in the same vocabulary as part_semantics.json. 'core' = the mechanic the style's traits reward (the planner treats it as the primary scoring axis). 'grants' = statuses the style itself supplies via traits or its multiplayer starting ability, so consumer parts for them are 'free'. 'mechanics' = play patterns the style pushes you into (so parts triggered by them fire often). Derived from racer_style_traits + racer_style_abilities; adjust by hand as needed.",
+    "modes": "Campaign styles have rank 1-3 trait sets; multiplayer has a fixed set plus a starting ability. The planner reads traits per mode from the DB; this file only adds the interpretation."
+  },
+  "afterburner": {
+    "core": [
+      "Afterburner"
+    ],
+    "grants": [],
+    "mechanics": [
+      "Afterburner"
+    ]
+  },
+  "brawler": {
+    "core": [
+      "Takedown"
+    ],
+    "grants": [
+      "Surging"
+    ],
+    "mechanics": [
+      "Takedown",
+      "Collision",
+      "Ability"
+    ]
+  },
+  "clean-racer": {
+    "core": [
+      "Surging"
+    ],
+    "grants": [
+      "Surging"
+    ],
+    "mechanics": [
+      "Ability",
+      "FirstPlace"
+    ]
+  },
+  "engineer": {
+    "core": [
+      "Ability"
+    ],
+    "grants": [
+      "Surging"
+    ],
+    "mechanics": [
+      "Ability",
+      "SysMalf",
+      "CritMalf"
+    ]
+  },
+  "firebug": {
+    "core": [
+      "Burning"
+    ],
+    "grants": [
+      "Burning",
+      "Cooled"
+    ],
+    "mechanics": [
+      "Ramjet",
+      "Afterburner",
+      "Ability"
+    ]
+  },
+  "ice-cold": {
+    "core": [
+      "Frozen"
+    ],
+    "grants": [
+      "Frozen",
+      "Cooled",
+      "Shielded"
+    ],
+    "mechanics": [
+      "Ramjet",
+      "Ability"
+    ]
+  },
+  "ramjet-rider": {
+    "core": [
+      "Cooled",
+      "Ramjet"
+    ],
+    "grants": [
+      "Cooled"
+    ],
+    "mechanics": [
+      "Ramjet",
+      "FirstPlace"
+    ]
+  },
+  "redliner": {
+    "core": [
+      "Redlining",
+      "Ramjet"
+    ],
+    "grants": [
+      "Surging"
+    ],
+    "mechanics": [
+      "Ramjet",
+      "Redlining"
+    ]
+  },
+  "slipstreamer": {
+    "core": [
+      "Slipstreaming"
+    ],
+    "grants": [
+      "Surging"
+    ],
+    "mechanics": [
+      "Slipstreaming"
+    ]
+  },
+  "stunt-runner": {
+    "core": [
+      "PerfectLanding",
+      "Airborne"
+    ],
+    "grants": [],
+    "mechanics": [
+      "PerfectLanding",
+      "Airborne",
+      "Afterburner",
+      "Ability"
+    ]
+  },
+  "survivor": {
+    "core": [
+      "Shielded",
+      "Crash"
+    ],
+    "grants": [
+      "Shielded",
+      "Surging"
+    ],
+    "mechanics": [
+      "Crash",
+      "LastCrash",
+      "Ability"
+    ]
+  },
+  "tech-expert": {
+    "core": [
+      "Ability",
+      "Energy"
+    ],
+    "grants": [
+      "Overcharged"
+    ],
+    "mechanics": [
+      "Ability",
+      "Energy"
+    ]
+  },
+  "tenacious": {
+    "core": [
+      "Crash"
+    ],
+    "grants": [
+      "Surging",
+      "Cooled"
+    ],
+    "mechanics": [
+      "Crash",
+      "Ability"
+    ]
+  },
+  "weaponized": {
+    "core": [
+      "Ability",
+      "Takedown"
+    ],
+    "grants": [],
+    "mechanics": [
+      "Ability",
+      "Takedown",
+      "Energy"
+    ]
+  },
+  "bt310-quadra": {
+    "core": [
+      "Cornering"
+    ],
+    "grants": [],
+    "mechanics": []
+  },
+  "custom-ord-pedrovia": {
+    "core": [
+      "Afterburner"
+    ],
+    "grants": [],
+    "mechanics": [
+      "Afterburner"
+    ]
+  },
+  "exelbrok-xl-5115": {
+    "core": [
+      "Speed"
+    ],
+    "grants": [],
+    "mechanics": []
+  },
+  "ipg-x1131-longtail": {
+    "core": [
+      "Afterburner",
+      "Cornering"
+    ],
+    "grants": [],
+    "mechanics": [
+      "Afterburner"
+    ]
+  },
+  "plug-f-mammoth": {
+    "core": [
+      "Collision"
+    ],
+    "grants": [],
+    "mechanics": [
+      "Collision",
+      "Takedown"
+    ]
+  },
+  "vulptereen-327": {
+    "core": [
+      "Afterburner",
+      "Speed"
+    ],
+    "grants": [],
+    "mechanics": [
+      "Afterburner"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "grbc",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Galactic Racer Build Companion - data scraper and build planner",
+  "scripts": {
+    "fetch": "node scraper/fetch.mjs",
+    "build-db": "node scraper/build-db.mjs",
+    "data": "npm run fetch && npm run build-db && npm run app-data && npm run assets",
+    "q": "node scraper/q.mjs",
+    "app-data": "node scraper/build-app-data.mjs",
+    "serve": "node scripts/serve.mjs 5173",
+    "bundle": "node scripts/bundle.mjs",
+    "test": "node --test",
+    "assets": "node scripts/fetch-assets.mjs"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0"
+  }
+}

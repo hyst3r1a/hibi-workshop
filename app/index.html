@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hibi's Shop · GRBC planner</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="stripes stripes-tl"></div><div class="stripes stripes-br"></div>
+
+<header class="hud">
+  <div class="brand"><span class="slash">/</span><h1>Hibi's Shop</h1><span class="tag">fan planner</span></div>
+  <div class="hud-mid" id="styleLine"></div>
+  <div class="hud-right">
+    <button class="pill" id="openGarage">Garage</button>
+    <div class="credits" id="creditsBig"></div>
+  </div>
+</header>
+
+<main class="shop">
+  <aside class="panel teal">
+    <h2>Installed parts <span id="slotsInfo"></span></h2>
+    <div class="installed" id="installed"></div>
+    <div class="search"><input id="partSearch" placeholder="Add a part you already have…" autocomplete="off"><div id="partSearchResults" class="results"></div></div>
+  </aside>
+
+  <section class="mid">
+    <div class="tabs" id="partsTabs">
+      <button data-tab="wish">Looking for</button>
+      <button data-tab="offer">On offer <span id="offerCount"></span></button>
+      <button data-tab="all">All parts</button>
+    </div>
+    <div class="search allsearch" id="allSearchWrap"><input id="allSearch" placeholder="Search every part by name or effect…" autocomplete="off"></div>
+    <div class="grid" id="offerGrid"></div>
+    <div class="search" id="offerSearchWrap"><input id="offerSearch" placeholder="Add a part the shop is showing…" autocomplete="off"><div id="offerSearchResults" class="results"></div></div>
+    <div class="shop-bar">
+      <button class="restock" id="restockBtn"></button>
+      <div class="odds" id="odds"></div>
+    </div>
+    <div class="advisor" id="advisor"></div>
+  </section>
+
+  <aside class="side">
+    <h2 class="cream-h">Packs</h2>
+    <div class="pack" id="upgradePack"></div>
+    <div class="pack" id="abilityPack"></div>
+    <h2 class="cream-h">Machine</h2>
+    <div class="machine" id="machineBox"></div>
+  </aside>
+</main>
+
+<footer class="hud-bottom">
+  <button class="pill" id="undoBtn">Undo</button>
+  <span class="last" id="lastAction"></span>
+  <span class="spacer"></span>
+  <button class="pill" id="historyBtn">History</button>
+  <button class="pill" id="resetRound">New shop visit</button>
+</footer>
+
+<dialog id="detailDlg" class="dlg"><div id="detailBody"></div></dialog>
+<dialog id="historyDlg" class="dlg"><div class="dlg-head"><h3>History</h3><button class="pill" data-close="historyDlg">Close</button></div><div id="log" class="log"></div></dialog>
+
+<dialog id="garageDlg" class="dlg garage">
+  <div class="garage-head">
+    <div class="brand"><span class="slash">/</span><h1>Garage</h1></div>
+    <div class="gtabs" id="gtabs">
+      <button data-gtab="run">Run</button>
+      <button data-gtab="style">Style</button>
+      <button data-gtab="machine">Machine</button>
+      <button data-gtab="favours">Favours</button>
+      <button data-gtab="upgrades">Upgrades</button>
+      <button data-gtab="wallet">Wallet</button>
+    </div>
+    <button class="pill solid" data-close="garageDlg">Done</button>
+  </div>
+  <div class="garage-body" id="garageBody"></div>
+</dialog>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
